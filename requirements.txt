@@ -5,3 +5,7 @@ cinemagoerng>=0.4
 imdbinfo>=0.5
 imdbpy>=2020.9.25
 neo4j==5.26
+numpy==1.21.0
+networkx==2.6.3
+matplotlib==3.4.2
+scipy==1.7.0
