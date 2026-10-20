@@ -19,7 +19,7 @@ GRAF_113/
 ├── README.md                 # Root documentation
 ├── requirements.txt          # Python dependencies
 └── UTS/                      # Midterm examination workspace
-    ├── README.md             # Detailed documentation for the UTS directory
+    ├── README_UTS.md         # Detailed documentation for the UTS directory
     ├── Pendahuluan.ipynb     # Main lab: filtering, Cypher constraints, batch import, VSM
     ├── Soal_UTS.IPYNB        # Conceptual checkpoint questions & initial Neo4j setup
     └── Data/                 # Preprocessed dataset splits
