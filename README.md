@@ -20,8 +20,8 @@ GRAF_113/
 ├── requirements.txt          # Python dependencies
 └── UTS/                      # Midterm examination workspace
     ├── README_UTS.md         # Detailed documentation for the UTS directory
-    ├── Pendahuluan.ipynb     # Main lab: filtering, Cypher constraints, batch import, VSM
-    ├── Soal_UTS.IPYNB        # Conceptual checkpoint questions & initial Neo4j setup
+    ├── Pendahuluan.ipynb     # CheckpointQestion and pre-requaisity
+    ├── Soal_UTS.IPYNB        # MID-TERM Question
     └── Data/                 # Preprocessed dataset splits
         ├── events_P1.csv     # Filtered interactions for Period 1 (Train fold)
         └── events_P2.csv     # Filtered interactions for Period 2 (Test fold)
