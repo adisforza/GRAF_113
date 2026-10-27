@@ -43,14 +43,10 @@ The periods share 4,777 visitors and 31,454 items.
 From the repository root, install the project dependencies and notebook tools:
 
 ```bash
-pip install -r requirements.txt pandas tqdm jupyter
+pip install -r requirements.txt 
 ```
 
-Start a Neo4j instance, then open the notebooks:
-
-```bash
-jupyter notebook
-```
+Start a Neo4j instance
 
 The notebooks include example connection settings:
 
@@ -77,10 +73,6 @@ UTS/Data/events_P2.csv
 
 ### 1. Introduction and graph basics
 
-`Soal_UTS.IPYNB` demonstrates connecting to Neo4j with the Python driver and creating `Person` nodes connected by directed `KNOWS` relationships. It also contains checkpoint answers about Neo4j databases, Cypher, and graph types.
-
-### 2. Prepare and import event data
-
 `Pendahuluan.ipynb` filters events into P1 and P2, creates uniqueness constraints, and imports data in batches using the Neo4j Python driver and Cypher.
 
 The RetailRocket graph uses `Visitor` and `Item` nodes, with interactions represented by relationships:
@@ -92,6 +84,10 @@ The RetailRocket graph uses `Visitor` and `Item` nodes, with interactions repres
 Purchase imports can also create `Transaction` nodes and connect them with `MADE` and `CONTAINS` relationships.
 
 **Database caution:** The notebook has a `RESET_DB` option. When enabled, it runs `MATCH (n) DETACH DELETE n` and deletes all nodes and relationships in the selected database. Check the setting before running import cells. The import code also checks for existing relationships for a period to avoid reimporting that period.
+
+### 2. Prepare and import event data
+
+`Soal_UTS.IPYNB` demonstrates connecting to Neo4j with the Python driver and creating `Person` nodes connected by directed `KNOWS` relationships. It also contains checkpoint answers about Neo4j databases, Cypher, and graph types.
 
 ### 3. Build and inspect user–item VSM
 
